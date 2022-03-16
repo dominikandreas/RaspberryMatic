@@ -22,12 +22,12 @@ init() {
   if [[ ! -c /dev/eq3loop ]]; then
     # load eq3_char_loop kernel module
     modprobe eq3_char_loop
-    sleep 5 # wait for /dev/eq3loop to settle
+    sleep 10 # wait for /dev/eq3loop to settle
   fi
 }
 
 waitStartupComplete() {
-  STEPS=10
+  STEPS=15
   for i in $(seq 1 ${STEPS}); do
     sleep 2
     echo -n "."
