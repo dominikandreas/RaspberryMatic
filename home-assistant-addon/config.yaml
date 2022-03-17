@@ -8,7 +8,7 @@ arch:
   - aarch64
   - amd64
 description: HomeMatic/homematicIP CCU central based on RaspberryMatic
-url: https://github.com/jens-maus/RaspberryMatic/
+url: https://github.com/dominikandreas/RaspberryMatic/
 watchdog: tcp://[HOST]:[PORT:80]
 ingress: true
 ingress_stream: true
@@ -107,6 +107,7 @@ ports_description:
 environment:
   HM_RUNNING_IN_HA: "1"
   HM_HAPROXY_SRC: 172.30.32.2/32
+full_access: true
 privileged:
   - IPC_LOCK
   - SYS_ADMIN
