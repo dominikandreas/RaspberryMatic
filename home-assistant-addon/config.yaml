@@ -1,6 +1,6 @@
 ---
 name: RaspberryMatic CCU
-version: 3.61.7.20220226
+version: 3.61.7.20220319
 slug: raspberrymatic
 image: ghcr.io/jens-maus/raspberrymatic
 arch:
@@ -12,6 +12,7 @@ url: https://github.com/dominikandreas/RaspberryMatic/
 watchdog: tcp://[HOST]:[PORT:80]
 ingress: true
 ingress_stream: true
+ingress_port: 80
 panel_title: RaspberryMatic
 panel_icon: mdi:router-wireless
 startup: services
